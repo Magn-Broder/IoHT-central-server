@@ -1,0 +1,44 @@
+{% block content %}
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+  <ul class="flash">
+  {% for message in messages %}
+    <li>{{ message }}</li>
+  {% endfor %}
+  </ul>
+{% endif %}
+{% endwith %}
+<h1>Registrer ny bruger</h1>
+<div class="register-container">
+<h2>Registrer medarbejder</h2>
+<form action="/register" method="post">
+  <div class="mb-3">
+    <label for="FirstName" class="form-label">Fornavn</label>
+    <input type="text" class="form-control" id="FirstName" name="firstname">
+  </div>
+  <br>
+  <div class="mb-3">
+    <label for="LastName" class="form-label">Efternavn</label>
+    <input type="text" class="form-control" id="LastName" name="lastname">
+  </div>
+  <br>
+  <div class="mb-3">
+    <label for="Username" class="form-label">Brugernavn</label>
+    <input type="text" class="form-control" id="Username" name="username">
+  </div>
+  <br>
+  <div class="mb-3">
+    <label for="Password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="Password" name="password">
+  </div>
+  <br>
+  <div class="mb-3">
+    <label for="Password" class="form-label">Gentag Password</label>
+    <input type="password" class="form-control" id="Password" name="confirm_password">
+  </div>
+  <br><br>
+  <button type="submit" class="btn btn-primary">Opret</button>
+</form>
+<p><a href="{{ url_for('login') }}">Gå tilbage</a></p>
+</div>
+{% endblock %}

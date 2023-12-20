@@ -1,0 +1,183 @@
+/* Common Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    color: #00393c;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #00393c;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 50%;
+    overflow: hidden;
+    margin: auto;
+    padding: 75px;
+    background: rgba(0, 0, 0, 0.18);;
+    border-radius: 10px ;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 8px;
+    border: 1px solid #5d3425;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    font-size: 0.9em;
+    font-weight: 100;
+    width: 150%;
+    height: 10%;
+    display: block;
+    border: none;
+    padding: 0.8em;
+    border: solid 1px #383838;
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #5d3425);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #5d3425);
+    background-position: -800px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+  }
+
+/* Specific Styles */
+/* login.html */
+.login-container {
+    width: 380px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 400px;
+    padding: 50px;
+    background: rgba(183, 182, 182, 0.18);
+    color: #00393c;
+    border-radius: 15px ;
+}
+
+.login-container button {
+    color: rgb(255, 255, 255);
+    background-color: #00393c;
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.4em;
+    margin: 4px 2px;
+    text-decoration: none;
+    border-radius: 10%;
+    margin-left: 40%;
+}
+
+/* register.html */
+.register-container {
+    width: 380px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 400px;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.18);;
+    color: #5d3425;
+    border-radius: 20px ;
+}
+
+.register-container button {
+    color: rgb(238, 236, 236);
+    background-color: #5d3425;
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.4em;
+    margin: 4px 2px;
+    text-decoration: none;
+    border-radius: 10%;
+}
+
+.mb-3{
+    display: grid;
+    grid-template-columns: repeat(1, 0.63fr);
+    grid-gap: 10x;
+}
+
+/* home.html */
+.home-container {
+    background-color: rgb(255, 255, 255);
+    color: #00393c;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-container a {
+    color: rgb(255, 255, 255);
+    background-color: #00393c;
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.4em;
+    margin: 4px 2px;
+    text-decoration: none;
+    border-radius: 3%;
+}
+
+/* graph.html */
+.graph {
+    text-align: center;
+
+}
+
+a {
+    color: rgb(255, 255, 255);
+    background-color: #00393c;
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.4em;
+    margin: 4px 2px;
+    text-decoration: none;
+    border-radius: 3%;
+}
+
+/* Flash Messages */
+.flash {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+    margin-left: 34.5%;
+}
+
+.success {
+    background-color: #4caf4fa0;
+    color: #000000;
+}
+
+.error {
+    background-color: #ff00005b;
+    color: #000000;
+}

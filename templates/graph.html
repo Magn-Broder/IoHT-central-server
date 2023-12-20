@@ -1,0 +1,22 @@
+<!-- templates/plot_bpm.html -->
+{% extends "base.html" %}
+
+<!--Title-->
+{% block title %}Graf{% endblock %} 
+
+{% block content %} 
+<!--Custom content goes inside these blocks-->
+<h1>Pulsfrekvens data</h1>
+    <div class="graph">
+        <!-- The graph will be embedded here -->
+        {{ graph | safe }}
+    </div>
+    <style>
+        .graph {
+            width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+    <br><br>
+    <a href="{{ url_for('home') }}">Gå tilbage</a>
+{% endblock %}
