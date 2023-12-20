@@ -1,7 +1,7 @@
 from passlib.hash import sha256_crypt
 import sqlite3
 
-DATABASE = 'database.db' # her sættes sti/til/database.db
+DATABASE = 'database.db'
 
 def get_db_connection():
     with sqlite3.connect(DATABASE) as connection:
@@ -29,8 +29,7 @@ def log_fall_data(coordinates):
 
 def register_user_to_db(first_name, last_name, username, password, confirm_password):
     if password != confirm_password:
-        return False  # Passwords do not match
-    
+        return False
     hashed_password = sha256_crypt.encrypt(password)
     conn = get_db_connection()
     cur = conn.cursor()
