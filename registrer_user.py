@@ -11,7 +11,7 @@ def get_db_connection():
 def register_user_to_db(first_name, last_name, username, password, confirm_password):
     if password != confirm_password:
         print("Passwords er ikke ens")
-        return False  # Passwords do not match
+        return False
     
     hashed_password = sha256_crypt.encrypt(password)
     conn = get_db_connection()
@@ -39,6 +39,3 @@ while True:
     
     else:
         print("-Invalid input-")
-
-
-        
